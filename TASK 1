@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+	
+    string book_name = " ";
+    int fine=0,days=0;
+	int issue_date,return_date;
+	cout << "Enter book which you want to issue: ";
+	cin >> book_name;
+	cout << "Issue date: ";
+	cin >> issue_date;
+	cout<<"Return date: ";
+	cin>>return_date;
+	days=return_date-issue_date;
+	cout<<"Days: "<<days<<endl;
+while(days<7){
+fine=fine+100;	
+}
+days++;
+cout<<fine;
+return 0;
+}	
