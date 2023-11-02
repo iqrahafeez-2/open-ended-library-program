@@ -1,0 +1,44 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+//TASK 2
+int range_start,range_end,num;
+int count=0;
+char choice;
+cout<<"Enter your choice(r for range and o for one number) : ";
+cin>>choice;
+if(choice=='r' || choice=='R'){
+	cout<<"Enter the number from where you want to start: ";
+	cin>>range_start;
+	cout<<"Enter the number where you want to end: ";
+	cin>>range_end;
+	
+	for(int i=range_start;i<=range_end;i++){
+		count=0;	
+		for(int j=1;j<=i;j++){
+			if(i%j==0)
+				count++;
+			}
+
+		if(count==2 && i!=1)
+			cout<<i<<" is Prime"<<endl;
+		else 
+			cout<<i<<" is composite "<<endl;	
+	}
+}
+if(choice=='o' || choice=='O'){
+	cout<<"Enter number: ";
+	cin>>num;
+	for(int i=1;i<=num;i++){
+	if(num%i==0)
+		count++;
+	}
+	if(count==2 && num!=1)
+		cout<<num<<" is Prime number."<<endl;
+	else 
+		cout<<num<<" is composite number. "<<endl;	
+}
+	
+return 0;
+}
