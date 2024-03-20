@@ -12,6 +12,8 @@ if(choice=='r' || choice=='R'){
 	cout<<"Enter the number from where you want to start: ";
 	cin>>range_start;
 	cout<<"Enter the number where you want to end: ";
+	cout<<"forking done";
+	
 	cin>>range_end;
 	
 	for(int i=range_start;i<=range_end;i++){
